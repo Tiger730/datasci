@@ -17,11 +17,12 @@
         <form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
             {% csrf_token %}
             <div class="form-group">
-                <h2>test text</h2>
+                <h4>Search scope (rec.motorcycles,sci.med,sci.space)</h4>
+                <h2></h2>
                 <textarea class="form-control" rows="3" name="chat" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">test</button>
-            <h1>{{ label }}</h1>
+            <button type="submit" class="btn btn-primary mb-2"> submit</button>
+            <h2>Data type : {{ label }}</h2>
         </form>
     </div>
 
